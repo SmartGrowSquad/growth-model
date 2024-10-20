@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상추 판매 가능성 및 성장일 예측</title>
+  <!-- TensorFlow.js를 먼저 로드합니다 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+  <h1>상추 판매 가능성 및 성장일 예측</h1>
+  
+  <label for="temperature">온도 (°C):</label>
+  <input type="number" id="temperature" placeholder="예: 25"><br><br>
+  
+  <label for="humidity">습도 (%):</label>
+  <input type="number" id="humidity" placeholder="예: 60"><br><br>
+  
+  <label for="plantArea">현재 식물 넓이 (cm<sup>2</sup>):</label>
+  <input type="number" id="plantArea" placeholder="예: 50"><br><br>
+  
+  <button id="predictButton" disabled>예측하기</button>
+  
+  <h2>예측 결과</h2>
+  <p id="saleResult">판매 가능성: </p>
+  <p id="growthResult">예상 성장일: </p>
+  
+  <!-- script.js를 마지막에 로드합니다 -->
+  <script src="script.js"></script>
+</body>
+</html>
